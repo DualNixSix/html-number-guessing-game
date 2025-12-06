@@ -1,19 +1,22 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>Guessing Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
     <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </head>
   <body>
     <!-- your HTML should go here -->
     <nav>
-      <h1>Let's Play the Guessing Number Game!</h1>
+      <h1> Let's Play the Guessing Number Game! </h1>
     </nav>
-
-
+      <div id="game">
+        <p id="message"> <h2> Enter your guess between 1 and 100 here: </h2> </p>
+        <input id="guessInput" type="number" />
+        <button onclick ="guessingGame()" id="guessButton">Guess</button>
+      </div>
   </body>
 </html>
